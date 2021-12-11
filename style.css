@@ -1,0 +1,92 @@
+/* main css to resize without streching */
+.card{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(1px);
+    background-position: center !important;
+}
+
+/* for center image */
+.card>img{
+    height: 50%;
+    width: auto;
+    border: 0.1px solid var(--bs-warning);
+}
+
+/* adding background urls */
+#i0{
+    background: url(/resize-image/images/img0.jpg);
+    background-size: cover;
+}
+#i1{
+    background: url(/resize-image/images/img1.jpg);
+    background-size: cover;
+}
+#i2{
+    background: url(/resize-image/images/img2.jpg);
+    background-size: cover;
+}
+#i3{
+    background: url(/resize-image/images/img3.jpg);
+    background-size: cover;
+}
+#i4{
+    background: url(/resize-image/images/img4.jpg);
+    background-size: cover;
+}
+#i5{
+    background: url(/resize-image/images/img5.jpg);
+    background-size: cover;
+}
+#i6{
+    background: url(/resize-image/images/img6.jpg);
+    background-size: cover;
+}
+#i7{
+    background: url(/resize-image/images/img7.jpg);
+    background-size: cover;
+}
+#i8{
+    background: url(/resize-image/images/img8.jpg);
+    background-size: cover;
+}
+#i9{
+    background: url(/resize-image/images/img9.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 50%;
+}
+
+/* additional styling */
+::selection{
+    background-color: rgb(246, 232, 29);
+    color: black;
+}
+body{
+    background-color: #ffc10730 !important;
+}
+.active{
+    background-color: rgba(0, 0, 0, 0.493);
+    border-radius: 5px;
+}
+.last-col{
+    display: flex;
+    justify-content: center;
+}
+h3>span{
+    background-color: var(--bs-warning);
+    color: white;
+    padding: 0 4px;
+    text-transform: uppercase;
+}
+.container>*{
+    margin: 3px;
+}
+#original-img>img{
+    width: 100%;
+}
+#generated-img{
+    display: none;
+}
