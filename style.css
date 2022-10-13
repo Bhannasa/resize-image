@@ -11,11 +11,15 @@
 
 /* for center image */
 .card>img{
+    opacity: 0.05;
     height: 50%;
     width: auto;
     border: 0.1px solid var(--bs-warning);
 }
-
+.card:hover>img{
+    opacity: 1;
+    transition: opacity .5s;
+}
 /* adding background urls */
 #i0{
     background: url(/resize-image/images/img0.jpg);
